@@ -1,0 +1,135 @@
+// MEDIA QUIERIES
+
+// PANTALLAS DE 800PX TABLETS
+@media screen and (max-width: 800px){
+    header {
+        .container {
+            position: static;
+            height: auto;
+        }
+
+        .title {
+            position: static;
+            margin: 100px 0px;
+
+            .text {
+                font-size: 30px;                
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+        }
+
+        .menu {
+            text-align: center;
+
+            a {
+                margin: 10px 20px;
+            }
+        }
+    }
+
+    .main {
+        .about-us {
+            .container {
+                .photo {
+                    width: 100%;
+                    position: relative;
+                }
+
+                article {
+                    position: relative;
+                    width: 100%;
+                    top: -50px;
+
+                }
+            }
+        }
+
+        .menu {
+            padding-top: 300px;
+
+            .food-menu-container {
+                article {
+                    width: 100%;
+                }
+            }
+        }
+
+        .gallery {
+            .photo {
+                width: 50%;
+            }
+        }
+
+        .map {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+
+//PANTALLAS DE 400PX TELEFONO MOVIL
+@media screen and (max-width: 400px) {
+    header {
+
+        .menu {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            a {
+                margin: 0px 0px;
+            }
+        }
+    }
+
+    .main {
+        .about-us {
+            .container {
+                article {
+    
+                    h3 {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            .food-menu-container {
+                article {
+                    .dishes {
+                        .name,
+                        .price {
+                            font-size: 15px;
+                            // line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .location {
+            .container {
+                .address,
+                .hours {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                .hours {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    align-items: center;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
